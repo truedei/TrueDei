@@ -68,7 +68,7 @@ RabbitMQPassword 123456
 
 运行如下图所示：
 
-![image-20200301140728040](F:\Programme\gitProject\TrueDei\img\image-20200301140728040.png)
+![image-20200301140728040](\img\image-20200301140728040.png)
 
 
 
