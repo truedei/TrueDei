@@ -18,7 +18,7 @@ TrueDeiClient-version   0.1
 
 总体结构流程图如下图所示：
 
-![image-20200301134033440](tree\master\img\image-20200301134033440.png)
+![image-20200301134033440](F:\Programme\gitProject\TrueDei\img\image-20200301134033440.png)
 
 因为是借助RabbitMQ做的消息中间件，所以需要配置一台RabiitMQ服务，此处为了方便，我是在Docker中部署的。所以就算你把RabbitMQ或者客户端部署到Docker容器上也是轻而易举的。不用担心部署麻烦的问题。当然了，我也做了详细的部署方案说明。
 
@@ -38,7 +38,7 @@ TrueDeiClient-version   0.1
 
 那么这套解决方案整适合你。需要简单的部署即可完美解决你的问题。
 
-![image-20200301135820848](F:\Programme\gitProject\TrueDei\img\image-20200301135820848.png)
+![image-20200301135820848](img\image-20200301135820848.png)
 
 如上图所示：
 
@@ -68,7 +68,7 @@ RabbitMQPassword 123456
 
 运行如下图所示：
 
-![image-20200301140728040](\img\image-20200301140728040.png)
+![image-20200301140728040](img\image-20200301140728040.png)
 
 
 
@@ -97,5 +97,5 @@ TrueDeiClient的部署需要把项目加载到SpringBoot的开发工具中，这
 
 就可以看到如下界面：此处我设计了开关，最初是关闭的。需要打开后就可以自动拉取数据了
 
-![image-20200301141214252](F:\Programme\gitProject\TrueDei\img\image-20200301141214252.png)
+![image-20200301141214252](img\image-20200301141214252.png)
 
