@@ -1,0 +1,42 @@
+spring:
+  datasource:
+    name: test  #数据库名
+    url: jdbc:mysql://ip:3306/test #url
+    username: root  #用户名
+    password: 123456  #密码
+    driver-class-name: com.mysql.jdbc.Driver  #数据库链接驱动
+  #给项目来个名字
+  application:
+    name: rabbitmq-provider
+  #thymeleaf
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    cache: true
+    servlet:
+      content-type: text/html
+#mybatis:
+#  mapper-locations: classpath:mapper/**/*.xml  #配置映射文件
+#  type-aliases-package: com.example.test.bean #配置实体类
+
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: ip
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: /
+#配置其他
+truedei:
+  rabbitmq:
+    topic:
+      exchangeName: truedei.linux.topic
+      disk: #日志队列
+        data: #监控的普通数据队列
+          queue: truedei.linux.topic.disk.data.queue #C1队列
+        warning: #报警消息队列
+          queue: truedei.linux.topic.disk.warning.queue #C1队列
+#      wx:
+#        queue: linux.topic.wx.queue #C3队列
